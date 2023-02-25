@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>BOOKI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="menu flex">
+        <img src="assets/logo/Booki@3x.png" class="logo" alt="logo BOOKI" />
+        <div>
+          <a href="#" class="liens">Hébergements</a>
+          <a href="#" class="liens">Activités</a>
+        </div>
+      </nav>
+      <div class="titres">
+        <h1 class="">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <h2 class="">En plein centre-ville ou en pleine nature</h2>
+      </div>
+    </header>
+
+    <div class="search-bar flex flex-row flex-alignitems">
+      <div class="point-loc">
+        <i class="fa-solid fa-location-dot"></i>
+      </div>
+      <form method="get" class="flex flex-row form-height" action="">
+        <input
+          class="search-input"
+          type="texte"
+          name="recherche lieux"
+          id="rechercher"
+          value="Marseille,France"
+        />
+        <input type="button" value="Rechercher" class="button" />
+      </form>
+    </div>
+
+    <div class="filter flex flex-row">
+      <h3 style="margin-right: 20px">Filtres</h3>
+      <a href="#" class="style-filter flex flex-row flex-alignitems"
+        ><i class="fa-solid fa-money-bill-wave icon-blue"></i>Economique</a
+      >
+      <a href="#" class="style-filter flex flex-row flex-alignitems">
+        <i class="fa-solid fa-person icon-blue"></i>Familial</a
+      >
+      <a href="#" class="style-filter flex flex-row flex-alignitems"
+        ><i class="fa-solid fa-heart icon-blue"></i>Romantique</a
+      >
+      <a href="#" class="style-filter flex flex-row flex-alignitems"
+        ><i class="fa-solid fa-dog icon-blue"></i>Animaux autorisés</a
+      >
+    </div>
+    <p class="">
+      <i class="fa-solid fa-info icon-i"></i> Plus de 500 logements sont
+      disponibles dans cette ville
+    </p>
+    <div class="block">
+      <div class="hebergement">
+        <div class="hebergement_title">Hébergements à Marseille</div>
+        <div class="hebergement_organisation">
+          <div class="flex flex-column hebergement_carte">
+            <img
+              class="lieux"
+              src="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+              alt="Auberge La Canebière"
+            />
+            <div class="hebergement_description">
+              <div class="hebergement_description_title">
+                Auberge La Canebière <br />
+              </div>
+              <div class="hebergement_description_sub-title">
+                Nuit à partir de 25<b>€</b><br />
+              </div>
+              <div class="hebergement_description_note">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star unchecked_star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-column hebergement_carte">
+            <img
+              class="lieux"
+              src="assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+              alt="Hôtel du port"
+            />
+            <div class="hebergement_description">
+              <div class="hebergement_description_title">
+                Hôtel du port <br />
+              </div>
+              <div class="hebergement_description_sub-title">
+                Nuit à partir de 52<b>€</b><br />
+              </div>
+              <div class="hebergement_description_note">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star unchecked_star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-column hebergement_carte">
+            <img
+              class="lieux"
+              src="assets/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+              alt="Hôtel Les mouettes"
+            />
+            <div class="hebergement_description">
+              <div class="hebergement_description_title">
+                Hôtel Les mouettes <br />
+              </div>
+              <div class="hebergement_description_sub-title">
+                Nuit à partir de 76<b>€</b><br />
+              </div>
+              <div class="hebergement_description_note">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star unchecked_star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-column hebergement_carte">
+            <img
+              class="lieux"
+              src="assets/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+              alt="Hôtel de la mer"
+            />
+            <div class="hebergement_description">
+              <div class="hebergement_description_title">
+                Hôtel de la mer <br />
+              </div>
+              <div class="hebergement_description_sub-title">
+                Nuit à partir de 46<b>€</b><br />
+              </div>
+              <div class="hebergement_description_note">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star unchecked_star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-column hebergement_carte">
+            <img
+              class="lieux"
+              src="assets/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+              alt="Auberge Le Panier"
+            />
+            <div class="hebergement_description">
+              <div class="hebergement_description_title">
+                Auberge Le Panier <br />
+              </div>
+              <div class="hebergement_description_sub-title">
+                Nuit à partir de 23<b>€</b><br />
+              </div>
+              <div class="hebergement_description_note">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star unchecked_star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-column hebergement_carte">
+            <img
+              class="lieux"
+              src="assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+              alt="Hôtel Chez Amina"
+            />
+            <div class="hebergement_description">
+              <div class="hebergement_description_title">
+                Hôtel Chez Amina <br />
+              </div>
+              <div class="hebergement_description_sub-title">
+                Nuit à partir de 96<b>€</b><br />
+              </div>
+              <div class="hebergement_description_note">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star unchecked_star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hebergement_plus">Afficher plus</div>
+      </div>
+      <div class="popular">
+        <div class="flex flex-row">
+          <div class="popular_title">Les plus populaires</div>
+          <i class="fa-solid fa-chart-line courbe"></i>
+        </div>
+        <div>
+          <div class="popular_carte flex flex-row">
+            <img
+              class="location"
+              src="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+              alt="Hôtel Le soleil du matin"
+            />
+            <div class="popular_description">
+              <div class="popular_description_title">
+                Hôtel Le soleil du matin <br />
+              </div>
+              <div class="popular_description_sub_title">
+                Nuit à partir de 128<b>€</b>
+              </div>
+              <div class="popular_description_note">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star unchecked_star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="popular_carte flex flex-row">
+            <img
+              class="location"
+              src="assets/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+              alt="Chambres d'hôtes Au coeur de l'eau"
+            />
+            <div class="popular_description">
+              <div class="popular_description_title">
+                Chambres d'hôtes Au coeur de l'eau
+              </div>
+              <div class="popular_description_sub_title_except">
+                Nuit à partir de 71<b>€</b>
+              </div>
+              <div class="popular_description_note">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star unchecked_star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="popular_carte flex flex-row">
+            <img
+              class="location"
+              src="assets/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+              alt="Hôtel Bleu et Blanc"
+            />
+            <!-- <img
+            class="location"
+            src="assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+            alt="Hôtel Bleu et Blanc"
+          /> -->
+            <div class="popular_description">
+              <div class="popular_description_title">
+                Hôtel Bleu et Blanc <br />
+              </div>
+              <div class="popular_description_sub_title">
+                Nuit à partir de 68<b>€</b>
+              </div>
+              <div class="popular_description_note">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star unchecked_star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer class="flex">
+    <ul class="flex flex-column">
+      <li class="footer-bold">A propos</li>
+      <li class="footer-normal">Fonctionnement du site</li>
+      <li class="footer-normal">Conditions générales</li>
+      <li class="footer-normal">Données et confidentialité</li>
+    </ul>
+    <ul class="flex flex-column">
+      <li class="footer-bold">Nos hébergements</li>
+      <li class="footer-normal">Charte qualité</li>
+      <li class="footer-normal">Poposer votre hôtel</li>
+    </ul>
+    <ul class="flex flex-column">
+      <li class="footer-bold">Assistance</li>
+      <li class="footer-normal">Centre d'aide</li>
+      <li class="footer-normal">Nous contacter</li>
+    </ul>
+  </footer>
+</html>
