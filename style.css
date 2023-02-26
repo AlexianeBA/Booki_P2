@@ -1,17 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 .logo {
   height: 29px;
-  padding-left: 20px;
   padding-top: 20px;
+}
+.head_of_the_website {
+  padding-left: 5px;
 }
 html {
   font-family: "Raleway", sans-serif;
+  margin: 0px;
+  padding: 0 50px 0 50px;
+}
+.padding-right50 {
+  padding-right: 50px;
 }
 body {
   position: relative;
-  width: 1400px;
-  /* margin-left: 50px;
-  margin-right: 50px; */
+  width: 1440px;
 }
 .menu {
   justify-content: space-between;
@@ -40,14 +45,12 @@ a:focus {
 h1 {
   font-size: 22px;
   font-weight: bolder;
-  padding-left: 20px;
   padding-top: 20px;
 }
 
 h2 {
   font-size: 16px;
   font-weight: normal;
-  padding-left: 20px;
 }
 
 ul {
@@ -55,11 +58,8 @@ ul {
 }
 
 .point-loc {
-  padding-left: 20px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-left: 20px;
+  padding: 10px 15px 10px 20px;
+  /* margin-left: 20px; */
   background-color: #f0f2f6;
   border-radius: 10px 0 0 10px;
   border-color: #f0f2f6;
@@ -80,7 +80,7 @@ ul {
 }
 
 .filter {
-  margin: 20px;
+  margin: 20px 20px 20px 0;
   align-items: baseline;
 }
 
@@ -112,7 +112,6 @@ h3 {
   border-radius: 100%;
   border: 1px solid #d9d9d9;
   padding: 6px;
-  margin-left: 20px;
   font-size: smaller;
   height: 15px;
   width: 15px;
@@ -124,15 +123,14 @@ h3 {
   font-size: 22px;
   font-weight: bold;
   padding-left: 40px;
-  margin-top: 30px;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 .hebergement {
   background-color: #f2f2f2;
-  margin-left: 20px;
   border-radius: 20px;
-  padding-right: 75px;
-  padding-top: 10px;
+  padding-right: 40px;
+
   width: 880px;
   height: 626px;
   margin-bottom: 20px;
@@ -149,7 +147,6 @@ h3 {
   width: 246px;
   height: 199px;
   background-color: white;
-  margin-left: 40px;
 }
 
 .hebergement_description {
@@ -176,12 +173,13 @@ h3 {
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 31px;
   grid-row-gap: 20px;
+  padding-left: 40px;
 }
 .hebergement_plus {
   font-weight: bold;
   padding-top: 40px;
   padding-bottom: 40px;
-  padding-left: 20px;
+  padding-left: 40px;
 }
 .popular {
   background-color: #f2f2f2;
@@ -202,16 +200,18 @@ h3 {
 .popular_title {
   font-weight: bold;
   font-size: 22px;
-  /* padding-top: 30px; */
+
   margin-left: 20px;
-  /* padding-right: 50px; */
-  /* margin-bottom: 20px; */
 }
 
-.courbe {
+.courbe_style {
   color: #0065fc;
   font-size: 22px;
   margin-right: 20px;
+}
+.courbe {
+  justify-content: space-between;
+  margin: 45px 10px 20px 10px;
 }
 .location {
   border-radius: 20px 0 0 20px;
@@ -247,21 +247,43 @@ h3 {
   padding-left: 10px;
   color: #0065fc;
 }
-.block {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 15px;
-  grid-row-gap: 0px;
-}
 
+.activity_title {
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.activity_card {
+  width: 302px;
+  height: 440px;
+}
+.activity_section_class {
+  padding-bottom: 60px;
+}
+.activity_name {
+  font-weight: bold;
+  padding-left: 30px;
+  padding-top: 20px;
+  font-size: 16px;
+  box-shadow: 1px 1px 12px #d9d9d9;
+
+  border-radius: 0 0 20px 20px;
+  padding-bottom: 20px;
+}
+.picture_size {
+  width: 320;
+  height: 440px;
+  object-fit: cover;
+  border: #d9d9d9;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 1px 1px 12px #d9d9d9;
+}
 footer {
   justify-content: space-around;
   background-color: #f0f2f6;
   position: bottom;
   height: 225px;
   gap: 200px;
-  /* margin: 0 50px 0 50px; */
 }
 .footer-bold {
   font-weight: bold;
@@ -286,4 +308,7 @@ footer {
 
 .flex-alignitems {
   align-items: baseline;
+}
+.space_bet_filter {
+  margin-right: 20px;
 }

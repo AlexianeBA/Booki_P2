@@ -16,56 +16,58 @@
   </head>
 
   <body>
-    <header>
-      <nav class="menu flex">
-        <img src="assets/logo/Booki@3x.png" class="logo" alt="logo BOOKI" />
+    <section id="head_of_section" class="head_of_the_website">
+      <header>
+        <nav class="menu flex">
+          <img src="assets/logo/Booki@3x.png" class="logo" alt="logo BOOKI" />
+          <div class="padding-right50">
+            <a href="#" class="liens">Hébergements</a>
+            <a href="#" class="liens">Activités</a>
+          </div>
+        </nav>
         <div>
-          <a href="#" class="liens">Hébergements</a>
-          <a href="#" class="liens">Activités</a>
+          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+          <h2>En plein centre-ville ou en pleine nature</h2>
         </div>
-      </nav>
-      <div class="titres">
-        <h1 class="">Trouvez votre hébergement pour des vacances de rêve</h1>
-        <h2 class="">En plein centre-ville ou en pleine nature</h2>
-      </div>
-    </header>
+      </header>
 
-    <div class="search-bar flex flex-row flex-alignitems">
-      <div class="point-loc">
-        <i class="fa-solid fa-location-dot"></i>
+      <div class="flex flex-row flex-alignitems">
+        <div class="point-loc">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <form method="get" class="flex flex-row form-height" action="">
+          <input
+            class="search-input"
+            type="texte"
+            name="recherche lieux"
+            id="rechercher"
+            value="Marseille,France"
+          />
+          <input type="button" value="Rechercher" class="button" />
+        </form>
       </div>
-      <form method="get" class="flex flex-row form-height" action="">
-        <input
-          class="search-input"
-          type="texte"
-          name="recherche lieux"
-          id="rechercher"
-          value="Marseille,France"
-        />
-        <input type="button" value="Rechercher" class="button" />
-      </form>
-    </div>
 
-    <div class="filter flex flex-row">
-      <h3 style="margin-right: 20px">Filtres</h3>
-      <a href="#" class="style-filter flex flex-row flex-alignitems"
-        ><i class="fa-solid fa-money-bill-wave icon-blue"></i>Economique</a
-      >
-      <a href="#" class="style-filter flex flex-row flex-alignitems">
-        <i class="fa-solid fa-person icon-blue"></i>Familial</a
-      >
-      <a href="#" class="style-filter flex flex-row flex-alignitems"
-        ><i class="fa-solid fa-heart icon-blue"></i>Romantique</a
-      >
-      <a href="#" class="style-filter flex flex-row flex-alignitems"
-        ><i class="fa-solid fa-dog icon-blue"></i>Animaux autorisés</a
-      >
-    </div>
-    <p class="">
-      <i class="fa-solid fa-info icon-i"></i> Plus de 500 logements sont
-      disponibles dans cette ville
-    </p>
-    <div class="block">
+      <div class="filter flex flex-row">
+        <h3 class="space_bet_filter">Filtres</h3>
+        <a href="#" class="style-filter flex flex-row flex-alignitems"
+          ><i class="fa-solid fa-money-bill-wave icon-blue"></i>Economique</a
+        >
+        <a href="#" class="style-filter flex flex-row flex-alignitems">
+          <i class="fa-solid fa-person icon-blue"></i>Familial</a
+        >
+        <a href="#" class="style-filter flex flex-row flex-alignitems"
+          ><i class="fa-solid fa-heart icon-blue"></i>Romantique</a
+        >
+        <a href="#" class="style-filter flex flex-row flex-alignitems"
+          ><i class="fa-solid fa-dog icon-blue"></i>Animaux autorisés</a
+        >
+      </div>
+      <p class="">
+        <i class="fa-solid fa-info icon-i"></i> Plus de 500 logements sont
+        disponibles dans cette ville
+      </p>
+    </section>
+    <div class="flex flex-row" style="gap: 40px">
       <div class="hebergement">
         <div class="hebergement_title">Hébergements à Marseille</div>
         <div class="hebergement_organisation">
@@ -205,9 +207,9 @@
         <div class="hebergement_plus">Afficher plus</div>
       </div>
       <div class="popular">
-        <div class="flex flex-row">
+        <div class="flex flex-row courbe">
           <div class="popular_title">Les plus populaires</div>
-          <i class="fa-solid fa-chart-line courbe"></i>
+          <i class="fa-solid fa-chart-line courbe_style"></i>
         </div>
         <div>
           <div class="popular_carte flex flex-row">
@@ -284,9 +286,46 @@
         </div>
       </div>
     </div>
+    <section id="activity_section" class="activity_section_class">
+      <div class="activity_title">Activités à Marseille</div>
+      <div class="flex flex-row" style="gap: 40px">
+        <div class="activity_card flex flex-column">
+          <img
+            class="picture_size"
+            src="assets/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+            alt="Vieux-Port"
+          />
+          <div class="activity_name">Vieux-Port</div>
+        </div>
+        <div class="activity_card flex flex-column">
+          <img
+            class="picture_size"
+            src="assets/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+            alt="Fort de Pomègues"
+          />
+          <div class="activity_name">Fort de Pomègues</div>
+        </div>
+        <div class="activity_card flex flex-column">
+          <img
+            class="picture_size"
+            src="assets/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+            alt="Parc national des Calanques"
+          />
+          <div class="activity_name">Parc national des Calanques</div>
+        </div>
+        <div class="activity_card flex flex-column">
+          <img
+            class="picture_size"
+            src="assets/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+            alt="Notre-Dame-de-la-Garde"
+          />
+          <div class="activity_name">Notre-Dame-de-la-Garde</div>
+        </div>
+      </div>
+    </section>
   </body>
 
-  <footer class="flex">
+  <footer class="flex padding-right50">
     <ul class="flex flex-column">
       <li class="footer-bold">A propos</li>
       <li class="footer-normal">Fonctionnement du site</li>
