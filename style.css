@@ -3,6 +3,7 @@
   height: 29px;
   padding-top: 20px;
 }
+
 .head_of_the_website {
   padding-left: 5px;
 }
@@ -21,6 +22,31 @@ body {
 .menu {
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-device-width: 1441px) {
+  /*Desktop*/
+  .hebergement {
+    background-color: #f2f2f2;
+  }
+  .hebergement_popular {
+    flex-direction: row;
+  }
+  @media screen and (max-device-width: 1024px) {
+    /*Tablette*/
+    .hebergement {
+      background-color: red;
+    }
+    .hebergement_popular {
+      flex-direction: column;
+    }
+    @media screen and (max-device-width: 768px) {
+      /*Smartphone*/
+      .hebergement {
+        background-color: blue;
+      }
+    }
+  }
 }
 
 a {
@@ -127,7 +153,6 @@ h3 {
   margin-bottom: 20px;
 }
 .hebergement {
-  background-color: #f2f2f2;
   border-radius: 20px;
   padding-right: 40px;
 
