@@ -24,104 +24,28 @@ body {
   align-items: center;
 }
 
-@media screen and (max-device-width: 1440px) {
-  /* desktop */
-  .popular {
+@media screen and (max-device-width: 1441px) {
+  /*Desktop*/
+  .hebergement {
     background-color: #f2f2f2;
-    width: 420px;
-    height: 626px;
-    border-radius: 20px;
   }
-
-  .popular_carte {
-    border-radius: 20px 20px 20px 20px;
-    border: 3px solid white;
-    width: 343px;
-    height: 144px;
-    background-color: white;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    padding-right: 20px;
-  }
-  .popular_description_note {
-    padding-left: 10px;
-    color: #0065fc;
-  }
-
-  .popular_description_sub_title {
-    padding-bottom: 60px;
-    padding-top: 10px;
-    padding-left: 10px;
-  }
-  .popular_description_sub_title_except {
-    padding-bottom: 45px;
-    padding-top: 10px;
-    padding-left: 10px;
-  }
-  .courbe {
-    justify-content: space-between;
-    margin: 45px 10px 20px 10px;
-  }
-  .courbe_style {
-    color: #0065fc;
-    font-size: 22px;
-    margin-right: 20px;
-  }
-}
-@media screen and (max-device-width: 1024px) {
-  /*Tablette*/
-
   .hebergement_popular {
-    flex-direction: column;
-  }
-  .popular_direction {
-    display: flex;
     flex-direction: row;
   }
-  .popular {
-    width: 880px;
-    height: 278px;
-    background-color: #f0f2f6;
-    padding-right: 40px;
-  }
-  .popular_carte {
-    border-radius: 20px 20px 20px 20px;
-    border: 3px solid white;
-    width: 252px;
-    height: 144px;
-    background-color: white;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    padding-right: 20px;
-  }
-  .popular_description_sub_title {
-    padding-bottom: 30px;
-    padding-top: 10px;
-    padding-left: 10px;
-    font-size: 14px;
-  }
-  .popular_description_note {
-    padding-left: 10px;
-    color: #0065fc;
-  }
-  .popular_description_title {
-    font-weight: bold;
-    font-size: 14px;
-    padding-left: 10px;
-    padding-top: 10px;
-  }
-
-  .courbe_style {
-    color: #0065fc;
-    font-size: 22px;
-    margin-right: 0px;
-    padding-left: 10px;
-  }
-}
-@media screen and (max-device-width: 768px) {
-  /*Smartphone*/
-  .hebergement {
-    background-color: blue;
+  @media screen and (max-device-width: 1024px) {
+    /*Tablette*/
+    .hebergement {
+      background-color: red;
+    }
+    .hebergement_popular {
+      flex-direction: column;
+    }
+    @media screen and (max-device-width: 768px) {
+      /*Smartphone*/
+      .hebergement {
+        background-color: blue;
+      }
+    }
   }
 }
 
@@ -229,24 +153,24 @@ h3 {
   margin-bottom: 20px;
   font-weight: bold;
 }
+.hebergement {
+  border-radius: 20px;
+  padding-right: 40px;
 
+  width: 57%;
+  height: 626px;
+  margin-bottom: 20px;
+}
 .lieux {
   border-radius: 20px 20px 0 0;
   height: 124px;
   object-fit: cover;
 }
-.hebergement {
-  border-radius: 20px;
-  padding-right: 40px;
-  background-color: #f2f2f2;
-  width: 880px;
-  height: 626px;
-  margin-bottom: 20px;
-}
+
 .hebergement_carte {
   border-radius: 20px 20px 20px 20px;
   border: 5px solid white;
-  width: 246px;
+  width: 95%;
   height: 199px;
   background-color: white;
 }
@@ -283,7 +207,22 @@ h3 {
   padding-bottom: 40px;
   padding-left: 40px;
 }
-
+.popular {
+  background-color: #f2f2f2;
+  width: 28%;
+  height: 626px;
+  border-radius: 20px;
+}
+.popular_carte {
+  border-radius: 20px 20px 20px 20px;
+  border: 3px solid white;
+  width: 343px;
+  height: 144px;
+  background-color: white;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding-right: 20px;
+}
 .popular_title {
   font-weight: bold;
   font-size: 22px;
@@ -291,6 +230,15 @@ h3 {
   margin-left: 20px;
 }
 
+.courbe_style {
+  color: #0065fc;
+  font-size: 22px;
+  margin-right: 20px;
+}
+.courbe {
+  justify-content: space-between;
+  margin: 45px 10px 20px 10px;
+}
 .location {
   border-radius: 20px 0 0 20px;
   height: 144px;
@@ -303,6 +251,27 @@ h3 {
   width: 343px;
   height: 144px;
   background-color: white;
+}
+
+.popular_description_title {
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.popular_description_sub_title {
+  padding-bottom: 60px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.popular_description_sub_title_except {
+  padding-bottom: 45px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.popular_description_note {
+  padding-left: 10px;
+  color: #0065fc;
 }
 
 .activity_title {
