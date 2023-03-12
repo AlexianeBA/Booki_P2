@@ -112,6 +112,57 @@ html {
     justify-content: space-between;
     align-items: center;
   }
+  /* .nav_barre {
+    /* margin-right: 25px;
+  } */
+  .liens:hover {
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
+    padding-top: 20px;
+  }
+  .liens {
+    margin-right: 25px;
+  }
+  .filter {
+    margin: 20px 20px 20px 0;
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .style-filter {
+    border-radius: 30px;
+    border: solid 2px;
+    border-color: #d9d9d9;
+    padding: 12.5px 20px 12.5px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  .style-filter:hover {
+    background-color: #deebff;
+  }
+  h3 {
+    padding-right: 10px;
+  }
+  .hebergement_organisation {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+    padding: 0 2% 0 2%;
+  }
+  .hebergement_carte {
+    border-radius: 20px 20px 20px 20px;
+    border: 5px solid white;
+    width: 95%;
+    height: 199px;
+    background-color: white;
+    flex-direction: column;
+  }
   @media screen and (max-device-width: 1024px) {
     /*Tablette*/
     .hebergement {
@@ -210,15 +261,176 @@ html {
       justify-content: space-between;
       align-items: center;
     }
+    .liens:hover {
+      color: #0065fc;
+      border-top: 2px solid #0065fc;
+      padding-top: 20px;
+    }
+    .liens {
+      margin-right: 25px;
+    }
+    .filter {
+      margin: 20px 20px 20px 0;
+      align-items: baseline;
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+    }
+
+    .style-filter {
+      border-radius: 30px;
+      border: solid 2px;
+      border-color: #d9d9d9;
+      padding: 12.5px 20px 12.5px 20px;
+      font-size: 16px;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+    .style-filter:hover {
+      background-color: #deebff;
+    }
+    h3 {
+      padding-right: 10px;
+    }
+    .hebergement_organisation {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 15px;
+      grid-row-gap: 20px;
+      padding: 0 2% 0 2%;
+    }
+    .hebergement_carte {
+      border-radius: 20px 20px 20px 20px;
+      border: 5px solid white;
+      width: 95%;
+      height: 199px;
+      background-color: white;
+      flex-direction: column;
+    }
     @media screen and (max-device-width: 768px) {
       /*Smartphone*/
       .hebergement {
-        background-color: blue;
-        border-radius: 20px;
+        background-color: white;
+        border-radius: 0px;
         padding-right: 40px;
-        width: 90%;
-        /* height: 140%; */
+        width: 100%;
+        height: 1299px;
         margin-bottom: 20px;
+      }
+      .hebergement_popular {
+        flex-direction: column-reverse;
+        gap: 20px;
+      }
+      .menu {
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .nav_barre {
+        border-bottom: 2px solid #d9d9d9;
+
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+      }
+
+      .liens {
+        padding: 0 20% 20px 20%;
+        margin-right: 0px;
+      }
+      .liens:hover {
+        color: #0065fc;
+        border-bottom: 2px solid #0065fc;
+        margin-bottom: -2px;
+        padding-top: 0px;
+
+        border-top: 0px;
+      }
+
+      .filter {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 0px;
+      }
+      .filter_buttons {
+        margin: 20px 0px 10px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+      }
+
+      .style-filter {
+        border-radius: 30px;
+        border: solid 2px;
+        border-color: #d9d9d9;
+        padding: 12.5px 20px 12.5px 20px;
+        font-size: 16px;
+        margin-left: 0px;
+        margin-right: 10px;
+        font-weight: bold;
+      }
+      .style-filter:hover {
+        background-color: #deebff;
+      }
+      .popular_organisation {
+        flex-direction: column;
+      }
+      .popular {
+        background-color: #f2f2f2;
+        width: 100%;
+        height: 580px;
+        border-radius: 0 0 0 0;
+        padding-bottom: 30px;
+      }
+      .popular_carte {
+        width: 93%;
+        height: 144px;
+        padding-right: 0px;
+      }
+      .popular_description_sub_title {
+        padding-bottom: 60px;
+        padding-top: 10px;
+        padding-left: 10px;
+      }
+      .popular_description_sub_title_except {
+        padding: 10px 0 60px 10px;
+      }
+      .hebergement_organisation {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+      }
+
+      .hebergement_carte {
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 2px 2px 2px 2px #f2f2f2;
+        border: 5px solid white;
+        width: 93%;
+        height: 199px;
+        background-color: white;
+        flex-direction: column;
+      }
+      .hebergement_plus {
+        display: none;
+      }
+      .activity_section_class {
+        margin-top: 150px;
+      }
+
+      .activity_organisation {
+        display: flex;
+        flex-direction: column;
+      }
+      .activity_card {
+        /* display: flex;
+        flex-direction: column; */
+        width: 93%;
+        height: 190px;
       }
     }
   }
@@ -232,15 +444,6 @@ a:visited,
 a:focus {
   text-decoration: none;
   color: inherit;
-}
-.liens {
-  margin-right: 25px;
-}
-
-.liens:hover {
-  color: #0065fc;
-  border-top: 2px solid #0065fc;
-  padding-top: 20px;
 }
 
 h1 {
@@ -280,29 +483,6 @@ ul {
   border: 1px solid #f0f2f6;
 }
 
-.filter {
-  margin: 20px 20px 20px 0;
-  align-items: baseline;
-}
-
-.style-filter {
-  border-radius: 30px;
-  border: solid 2px;
-  border-color: #d9d9d9;
-  padding: 12.5px 20px 12.5px 20px;
-  font-size: 16px;
-  margin-left: 10px;
-  margin-right: 10px;
-  font-weight: bold;
-}
-h3 {
-  padding-right: 10px;
-}
-
-.style-filter:hover {
-  background-color: #deebff;
-}
-
 .icon-blue {
   color: #0065fc;
   padding-right: 5px;
@@ -335,15 +515,6 @@ h3 {
   object-fit: cover;
 }
 
-.hebergement_carte {
-  border-radius: 20px 20px 20px 20px;
-  border: 5px solid white;
-  width: 95%;
-  height: 199px;
-  background-color: white;
-  flex-direction: column;
-}
-
 .hebergement_description {
   padding: 10px;
   padding-bottom: 10px;
@@ -362,14 +533,7 @@ h3 {
 .unchecked_star {
   color: #f2f2f2;
 }
-.hebergement_organisation {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 15px;
-  grid-row-gap: 20px;
-  padding: 0 2% 0 2%;
-}
+
 .hebergement_plus {
   font-weight: bold;
   padding-top: 40px;
