@@ -16,8 +16,12 @@ html {
   padding-right: 50px;
 } */
 
-@media screen and (max-device-width: 1441px) {
+@media screen and (max-device-width: 1920px) {
   /*Desktop*/
+  footer {
+    height: 225px;
+  }
+
   .hebergement {
     background-color: #f2f2f2;
     border-radius: 20px;
@@ -162,6 +166,14 @@ html {
     height: 199px;
     background-color: white;
     flex-direction: column;
+  }
+  .picture_size {
+    /* width: 320px; */
+    height: 440px;
+    object-fit: cover;
+    border: #d9d9d9;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 1px 1px 12px #d9d9d9;
   }
   @media screen and (max-device-width: 1024px) {
     /*Tablette*/
@@ -309,6 +321,14 @@ html {
       background-color: white;
       flex-direction: column;
     }
+    .picture_size {
+      /* width: 320px; */
+      height: 440px;
+      object-fit: cover;
+      border: #d9d9d9;
+      border-radius: 20px 20px 0 0;
+      box-shadow: 1px 1px 12px #d9d9d9;
+    }
     @media screen and (max-device-width: 768px) {
       /*Smartphone*/
       .hebergement {
@@ -330,7 +350,7 @@ html {
 
       .nav_barre {
         border-bottom: 2px solid #d9d9d9;
-
+        padding: 0 5% 0 5%;
         display: flex;
         justify-content: space-around;
         width: 100%;
@@ -373,6 +393,7 @@ html {
         margin-left: 0px;
         margin-right: 10px;
         font-weight: bold;
+        color: black;
       }
       .style-filter:hover {
         background-color: #deebff;
@@ -429,8 +450,29 @@ html {
       .activity_card {
         /* display: flex;
         flex-direction: column; */
-        width: 93%;
+        width: 90%;
         height: 190px;
+        align-items: center;
+      }
+      .picture_size {
+        width: 103%;
+        height: 120px;
+        object-fit: cover;
+        border: #d9d9d9;
+        border-radius: 20px 20px 0 0;
+        box-shadow: 1px 1px 12px #d9d9d9;
+        margin: 0 0 0 20px;
+      }
+      footer {
+        margin-top: 450px;
+        height: 600px;
+      }
+      .footer_flex_column {
+        flex-direction: column;
+      }
+      .activity_name {
+        width: 100%;
+        margin: 0 0 0 20px;
       }
     }
   }
@@ -582,19 +624,10 @@ ul {
   padding-bottom: 20px;
 }
 
-.picture_size {
-  width: 320;
-  height: 440px;
-  object-fit: cover;
-  border: #d9d9d9;
-  border-radius: 20px 20px 0 0;
-  box-shadow: 1px 1px 12px #d9d9d9;
-}
-
 footer {
   justify-content: space-around;
   background-color: #f0f2f6;
-  height: 225px;
+
   gap: 200px;
 }
 .footer-bold {
